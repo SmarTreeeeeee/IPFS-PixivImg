@@ -10,7 +10,11 @@ permissions:
 
 jobs:
   crawl-and-build:
-    runs-on: self-hosted
+    runs-on:
+      - self-hosted
+      - linux
+      - x64
+
     
     steps:
     - uses: actions/checkout@v3
